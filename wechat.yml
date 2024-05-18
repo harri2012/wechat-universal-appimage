@@ -39,6 +39,6 @@ script:
 
   # wechat.sh
   - mkdir ./bin
-  - cp wechat.sh ./bin/wechat
+  - cp ${GITHUB_WORKSPACE}/wechat.sh ./bin/wechat
   - chmod +x ./bin/wechat
   - sed -i 's|/app/|$HERE/app/|' ./bin/wechat
